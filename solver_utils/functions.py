@@ -1,13 +1,24 @@
-def input_map() -> list:
+def input_map(cube_map) -> list:
     """Console ui to get the layout of the cube. You can give: w (white), y (yellow), b (blue), g, r, o
     
     Returns:
         list: cube_map filled with letters.
     """
     print("")
-    cube_map = []
-    for i in range(6):
-        cube_map.append(list(str(input(f"FACE {i}: "))))
+    # cube_map = []
+    # cube_map = [['r', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g'], ['o', 'o', 'w', 'o', 'o', 'y', 'o', 'o', 'o'], ['b', 'b', 'y', 'r', 'b', 'b', 'y', 'b', 'b'], ['r', 'b', 'b', 'r', 'r', 'r', 'r', 'r', 'r'], ['y', 'y', 'g', 'y', 'y', 'o', 'y', 'y', 'o'], ['w', 'w', 'b', 'w', 'w', 'w', 'w', 'w', 'w']]
+    # face_string = ""
+    # for i in range(len(state_string)):
+    #     if i % 9 == 0 and i != 0:
+    #         cube_map.append([j for j in face_string])
+    #         face_string = ""
+    #     face_string += state_string[i]
+
+    # print(cube_map)
+
+    # for i in range(6):
+    #     cube_map.append(list(str(input(f"FACE {i}: "))))
+    # print(cube_map)
     y = 0
     for face in cube_map:
         x = 0
